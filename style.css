@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
-  color: #222;
+  background-color: #f5f8fc;
+  color: #111827;
+  line-height: 1.6;
 }
 
 .hero {
-  background: linear-gradient(to right, #0a9be8, #004e92);
-  color: white;
+  background: linear-gradient(to right, #083b7a, #052d5f);
+  color: #f8fbff;
   text-align: center;
   padding: 60px 20px;
 }
@@ -21,6 +26,7 @@ body {
   font-size: 120px;
   font-weight: bold;
   margin-bottom: 10px;
+  letter-spacing: 0.04em;
 }
 
 .hero h1 {
@@ -33,7 +39,7 @@ body {
 .line {
   width: 100px;
   height: 4px;
-  background-color: #1ec8ff;
+  background-color: #7dd3fc;
   margin: 25px auto;
 }
 
@@ -61,16 +67,24 @@ body {
   height: 340px;
   background-color: white;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  outline: none;
 }
 
 .card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 4px rgba(10, 155, 232, 0.28), 0 14px 28px rgba(0, 0, 0, 0.18);
 }
 
 .card h2 {
-  color: #0b3d91;
+  color: #052d5f;
   font-size: 34px;
   margin: 20px 20px 10px;
 }
@@ -78,11 +92,10 @@ body {
 .card h3 {
   font-size: 24px;
   margin: 0 20px 15px;
-  color: #333;
+  color: #1f2937;
 }
 
 .card img {
-  color: #0b3d91;
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -104,9 +117,9 @@ body {
   width: 100%;
   height: 100%;
 
-  background: rgba(0, 56, 120, 0.93);
+  background: rgba(3, 23, 48, 0.96);
 
-  color: white;
+  color: #ffffff;
 
   display: flex;
   justify-content: center;
@@ -127,11 +140,150 @@ body {
   bottom: 0;
 }
 
+.card:focus-visible .overlay,
+.card:focus-within .overlay {
+  bottom: 0;
+}
+
 .instruction {
   text-align: center;
   margin-top: 45px;
   font-size: 20px;
-  color: #444;
+  color: #374151;
+}
+
+.newsletter-section {
+  padding-top: 20px;
+}
+
+.newsletter-card {
+  background: linear-gradient(135deg, #ffffff, #edf6ff);
+  border: 1px solid #bed8f3;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 78, 146, 0.12);
+}
+
+.newsletter-kicker {
+  color: #052d5f;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.newsletter-card h2 {
+  color: #052d5f;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.newsletter-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.form-note {
+  font-size: 15px;
+  font-weight: 700;
+  color: #052d5f;
+  margin-top: 12px;
+}
+
+.newsletter-card .form-label {
+  font-weight: bold;
+  color: #052d5f;
+}
+
+.newsletter-card .form-control {
+  border: 1px solid #7fb1e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 48px;
+}
+
+.newsletter-card .form-control:focus {
+  border-color: #083b7a;
+  box-shadow: 0 0 0 0.2rem rgba(8, 59, 122, 0.18);
+}
+
+.newsletter-card .form-control:invalid {
+  border-color: #b91c1c;
+}
+
+.newsletter-card .form-text {
+  color: #4b5563;
+}
+
+.required-marker {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.newsletter-btn {
+  background-color: #083b7a;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 999px;
+  border: none;
+  min-height: 48px;
+}
+
+.newsletter-btn:hover {
+  background-color: #052d5f;
+  color: #ffffff;
+}
+
+.newsletter-btn:focus-visible {
+  box-shadow: 0 0 0 4px rgba(8, 59, 122, 0.22);
+}
+
+.site-footer {
+  background: #052d5f;
+  color: #f8fbff;
+  padding: 22px 20px;
+  margin-top: 30px;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 16px;
+  color: #f8fbff;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #f8fbff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav a:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #083b7a;
+  outline-offset: 3px;
 }
 
 
@@ -158,5 +310,9 @@ body {
 
   .card {
     width: 90%;
+  }
+
+  .footer-nav a {
+    padding: 12px 14px;
   }
 }

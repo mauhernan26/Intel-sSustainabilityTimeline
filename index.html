@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <meta
+    name="description"
+    content="Explore Intel's sustainability journey through milestones, responsible innovation, and a newsletter signup with accessible form controls."
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,10 +32,10 @@
   <main class="timeline-section">
     <div class="cards">
 
-      <div class="card">
+      <div class="card" tabindex="0" aria-label="1968 Intel Founded timeline card. Focus to read more details.">
         <h2>1968</h2>
         <h3>Intel Founded</h3>
-        <img src="16.jpg" alt="Intel Founded">
+        <img src="16.jpg" alt="Timeline image for Intel's 1968 founding milestone">
         <div class="overlay">
           <p>
             Robert Noyce and Gordon Moore rename the newly formed company
@@ -36,10 +45,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" tabindex="0" aria-label="1971 First Microprocessor timeline card. Focus to read more details.">
         <h2>1971</h2>
         <h3>First Microprocessor</h3>
-        <img src="img/2.jpg" alt="First microprocessor image">
+        <img src="img/2.jpg" alt="Timeline image for Intel's first commercial microprocessor">
 
         <div class="overlay">
           <p>
@@ -50,10 +59,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" tabindex="0" aria-label="1978 8086 Processor timeline card. Focus to read more details.">
         <h2>1978</h2>
         <h3>8086 Processor</h3>
-        <img src="img/3.jpg" alt="8086 processor image">
+        <img src="img/3.jpg" alt="Timeline image for Intel's 8086 processor milestone">
 
         <div class="overlay">
           <p>
@@ -63,10 +72,10 @@
         </div>
       </div>
 
-      <div class="card featured">
+      <div class="card featured" tabindex="0" aria-label="1985 386 Processor timeline card. Focus to read more details.">
         <h2>1985</h2>
         <h3>386 Processor</h3>
-        <img src="img/4.jpg" alt="386 processor image">
+        <img src="img/4.jpg" alt="Timeline image for Intel's 386 processor milestone">
 
         <div class="overlay">
           <p>
@@ -76,12 +85,216 @@
           </p>
         </div>
       </div>
-
     </div>
+
+    <section class="py-5 bg-light rtl-section">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4">
+            <div class="p-4 border rounded-3 h-100 bg-white">
+              <h2>RISE Strategy</h2>
+              <p>
+                Intel's RISE strategy focuses on responsible innovation,
+                inclusive growth, sustainable operations, and enabling a
+                better future for communities and the planet.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#riseModal"
+              >
+                Learn more about RISE
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="p-4 border rounded-3 h-100 bg-white">
+              <h2>Commitment</h2>
+              <p>
+                Intel is committed to reducing emissions, improving
+                efficiency, and supporting long-term environmental goals
+                across its global operations.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#commitmentModal"
+              >
+                Learn more about commitment
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="p-4 border rounded-3 h-100 bg-white">
+              <h2>Water &amp; Waste</h2>
+              <p>
+                Intel works to conserve water, reduce waste, and advance a
+                circular economy through recycling, reuse, and community
+                partnerships.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#waterWasteModal"
+              >
+                Learn more about water and waste
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="riseModal" tabindex="-1" aria-labelledby="riseModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="riseModalLabel">RISE Strategy</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              RISE stands for responsible innovation, sustainable operations, and a stronger ecosystem for people and the planet.
+            </p>
+            <p>
+              This approach helps Intel make progress with environmental goals while supporting communities and long-term resilience.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="commitmentModal" tabindex="-1" aria-labelledby="commitmentModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="commitmentModalLabel">Commitment</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Intel's commitment includes improving energy efficiency, lowering emissions, and using responsible business practices across operations.
+            </p>
+            <p>
+              These efforts support a clearer path toward measurable sustainability progress over time.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="waterWasteModal" tabindex="-1" aria-labelledby="waterWasteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="waterWasteModalLabel">Water and Waste</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Intel works to conserve water, reduce waste, and support recycling and reuse wherever possible.
+            </p>
+            <p>
+              Community partnerships help extend these efforts beyond company sites and into local sustainability programs.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="newsletter-section py-5">
+      <div class="container">
+        <div class="newsletter-card p-4 p-md-5">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-5">
+              <p class="newsletter-kicker">Intel Sustainability</p>
+              <h2>Our Weekly Newsletter</h2>
+              <p>
+                Subscribe for simple updates about Intel's sustainability goals,
+                progress, and future plans
+              </p>
+              <p class="form-note"> Fields marked with * are required.</p>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <form class="row g-3">
+                <div class="col-12 col-md-4">
+                  <label for="name" class="form-label">
+                    Name <span class="required-marker" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required aria-required="true" />
+                  <div class="form-text">Use the name you want on the newsletter.</div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <label for="email" class="form-label">
+                    Email <span class="required-marker" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" autocomplete="email" required aria-required="true" aria-describedby="email-help" />
+                  <div class="form-text" id="email-help">We will send the newsletter to this address.</div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <label for="birthday" class="form-label">Birthday</label>
+                  <input type="date" class="form-control" id="birthday" name="birthday" autocomplete="bday" />
+                  <div class="form-text">Use a valid date so we can personalize updates if needed.</div>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn newsletter-btn px-4 py-2">
+                    Subscribe Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <p class="instruction">
       Scroll to view timeline | Hover over cards to learn more!
     </p>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p class="footer-copy">
+            Copyright © 2026 Intel Corporation. All rights reserved.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
 
 </body>
 </html>
